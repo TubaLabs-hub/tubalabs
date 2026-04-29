@@ -42,32 +42,46 @@ export default function Home() {
       <Testimonials />
 
       {/* Contact CTA */}
-      <section id="contact" className="py-32 container mx-auto px-6 text-center relative z-10">
-        <div className="max-w-4xl mx-auto glass p-16 rounded-[3rem] border-teal-cyan/20 space-y-10 relative overflow-hidden group">
-          <div className="absolute inset-0 bg-gradient-to-tr from-teal-cyan/5 to-deep-purple/5 opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
+      <section id="contact" className="pt-32 pb-48 container mx-auto px-6 text-center relative z-20 group">
+        <div className="max-w-4xl mx-auto glass p-16 rounded-[3rem] border-teal-cyan/20 space-y-10 relative overflow-hidden transition-all duration-700 group-hover:border-teal-cyan/50 group-hover:shadow-[0_0_80px_rgba(45,212,191,0.15)] group-hover:bg-white/[0.05]">
+          {/* Main Hover Glows */}
+          <div className="absolute inset-0 bg-gradient-to-tr from-teal-cyan/15 to-deep-purple/15 opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
           
-          <div className="relative z-10 space-y-8">
-            <h2 className="text-5xl font-display font-bold">Siap Membangun Masa Depan Digital Anda?</h2>
-            <p className="text-gray-400 text-xl leading-relaxed max-w-2xl mx-auto">
+          <div className="relative z-10 space-y-8 transform transition-transform duration-700 group-hover:scale-[1.01]">
+            <h2 className="text-5xl md:text-6xl font-display font-bold bg-clip-text text-transparent bg-gradient-to-r from-white to-white/70">
+              Siap Membangun Masa Depan Digital Anda?
+            </h2>
+            <p className="text-gray-400 text-xl leading-relaxed max-w-2xl mx-auto group-hover:text-gray-300 transition-colors">
               Konsultasikan kebutuhan teknologi bisnis Anda dengan tim ahli kami secara gratis. Mari tumbuh bersama.
             </p>
             <div className="flex flex-col sm:flex-row gap-6 justify-center pt-6">
-              <button className="px-10 py-5 rounded-full bg-white text-primary-navy font-bold text-lg hover:bg-teal-cyan transition-all shadow-[0_0_40px_rgba(45,212,191,0.2)]">
+              <a 
+                href="https://wa.me/6281359867259" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="px-10 py-5 rounded-full bg-white text-primary-navy font-bold text-lg hover:bg-teal-cyan hover:scale-105 transition-all shadow-[0_0_40px_rgba(45,212,191,0.3)] flex items-center justify-center"
+              >
                 Hubungi via WhatsApp
-              </button>
-              <button className="px-10 py-5 rounded-full glass font-bold text-lg hover:bg-white/5 transition-all">
+              </a>
+              <a 
+                href="mailto:hello@tubalabs.com"
+                className="px-10 py-5 rounded-full glass font-bold text-lg hover:bg-white/10 hover:scale-105 transition-all flex items-center justify-center"
+              >
                 Kirim Email
-              </button>
+              </a>
             </div>
           </div>
           
-          {/* Decorative accents */}
-          <div className="absolute top-0 right-0 w-32 h-32 bg-teal-cyan/10 blur-3xl -mr-16 -mt-16" />
-          <div className="absolute bottom-0 left-0 w-32 h-32 bg-deep-purple/10 blur-3xl -ml-16 -mb-16" />
+          {/* Floating Decorative Accents */}
+          <div className="absolute top-0 right-0 w-80 h-80 bg-teal-cyan/10 blur-[100px] -mr-40 -mt-40 opacity-0 group-hover:opacity-100 transition-all duration-700" />
+          <div className="absolute bottom-0 left-0 w-80 h-80 bg-deep-purple/10 blur-[100px] -ml-40 -mb-40 opacity-0 group-hover:opacity-100 transition-all duration-700" />
+          
+          {/* Central Bottom Glow Fix */}
+          <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-full h-1/2 bg-gradient-to-t from-teal-cyan/10 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-700 pointer-events-none" />
         </div>
       </section>
 
-      <footer className="py-20 border-t border-white/5 relative z-10 bg-primary-navy/50">
+      <footer className="py-24 border-t border-white/5 relative z-10 bg-primary-navy/80 backdrop-blur-sm">
         <div className="container mx-auto px-6">
           <div className="grid md:grid-cols-4 gap-12 mb-16">
             <div className="col-span-1 md:col-span-1 space-y-6">

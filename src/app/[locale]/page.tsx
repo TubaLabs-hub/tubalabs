@@ -1,0 +1,128 @@
+import Navbar from "@/components/layout/Navbar";
+import BinaryBackground from "@/components/ui/BinaryBackground";
+import Hero from "@/components/sections/Hero";
+import Services from "@/components/sections/Services";
+import ValueProposition from "@/components/sections/ValueProposition";
+import MSMESection from "@/components/sections/MSMESection";
+import Testimonials from "@/components/sections/Testimonials";
+import {useTranslations} from 'next-intl';
+
+export default function Home() {
+  const t = useTranslations('Index');
+
+  return (
+    <main className="relative min-h-screen">
+      <BinaryBackground />
+      <Navbar />
+      <Hero />
+      
+      {/* Trust Badge Section */}
+      <section className="py-20 container mx-auto px-6 relative z-10">
+        <div className="flex flex-col items-center justify-center space-y-8">
+          <p className="text-teal-cyan font-mono text-sm tracking-[0.3em] uppercase opacity-70">{t('trust')}</p>
+          <div className="w-full overflow-hidden relative">
+            <div className="flex flex-wrap gap-12 md:gap-24 items-center justify-center group transition-all duration-700">
+              <img src="/logos/medco.png" alt="Medco" className="h-8 md:h-12 w-auto object-contain opacity-70 grayscale brightness-0 invert group-hover:opacity-100 group-hover:grayscale-0 group-hover:brightness-100 group-hover:invert-0 transition-all duration-500" />
+              <img src="/logos/telkomsel.png" alt="Telkomsel" className="h-8 md:h-12 w-auto object-contain opacity-70 grayscale brightness-0 invert group-hover:opacity-100 group-hover:grayscale-0 group-hover:brightness-100 group-hover:invert-0 transition-all duration-500" />
+              <img src="/logos/pertamina.png" alt="Pertamina" className="h-8 md:h-12 w-auto object-contain opacity-70 grayscale brightness-0 invert group-hover:opacity-100 group-hover:grayscale-0 group-hover:brightness-100 group-hover:invert-0 transition-all duration-500" />
+              <img src="/logos/pelindo.png" alt="Pelindo" className="h-8 md:h-12 w-auto object-contain opacity-70 grayscale brightness-0 invert group-hover:opacity-100 group-hover:grayscale-0 group-hover:brightness-100 group-hover:invert-0 transition-all duration-500" />
+              <img src="/logos/garuda.png" alt="Garuda Indonesia" className="h-8 md:h-12 w-auto object-contain opacity-70 grayscale brightness-0 invert group-hover:opacity-100 group-hover:grayscale-0 group-hover:brightness-100 group-hover:invert-0 transition-all duration-500" />
+              <img src="/logos/mandiri.png" alt="Bank Mandiri" className="h-8 md:h-12 w-auto object-contain opacity-70 grayscale brightness-0 invert group-hover:opacity-100 group-hover:grayscale-0 group-hover:brightness-100 group-hover:invert-0 transition-all duration-500" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <ValueProposition />
+      
+      <Services />
+
+      <MSMESection />
+
+      <Testimonials />
+
+      {/* Contact CTA */}
+      <section id="contact" className="py-32 container mx-auto px-6 text-center relative z-10">
+        <div className="max-w-4xl mx-auto glass p-16 rounded-[3rem] border-teal-cyan/20 space-y-10 relative overflow-hidden group">
+          <div className="absolute inset-0 bg-gradient-to-tr from-teal-cyan/5 to-deep-purple/5 opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
+          
+          <div className="relative z-10 space-y-8">
+            <h2 className="text-5xl font-display font-bold">Siap Membangun Masa Depan Digital Anda?</h2>
+            <p className="text-gray-400 text-xl leading-relaxed max-w-2xl mx-auto">
+              Konsultasikan kebutuhan teknologi bisnis Anda dengan tim ahli kami secara gratis. Mari tumbuh bersama.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-6 justify-center pt-6">
+              <button className="px-10 py-5 rounded-full bg-white text-primary-navy font-bold text-lg hover:bg-teal-cyan transition-all shadow-[0_0_40px_rgba(45,212,191,0.2)]">
+                Hubungi via WhatsApp
+              </button>
+              <button className="px-10 py-5 rounded-full glass font-bold text-lg hover:bg-white/5 transition-all">
+                Kirim Email
+              </button>
+            </div>
+          </div>
+          
+          {/* Decorative accents */}
+          <div className="absolute top-0 right-0 w-32 h-32 bg-teal-cyan/10 blur-3xl -mr-16 -mt-16" />
+          <div className="absolute bottom-0 left-0 w-32 h-32 bg-deep-purple/10 blur-3xl -ml-16 -mb-16" />
+        </div>
+      </section>
+
+      <footer className="py-20 border-t border-white/5 relative z-10 bg-primary-navy/50">
+        <div className="container mx-auto px-6">
+          <div className="grid md:grid-cols-4 gap-12 mb-16">
+            <div className="col-span-1 md:col-span-1 space-y-6">
+              <div className="flex flex-col">
+                <span className="font-display font-bold text-2xl tracking-tight">Tuba Labs</span>
+                <span className="text-[10px] uppercase tracking-[0.2em] text-teal-cyan/80 font-sans">code that grows</span>
+              </div>
+              <p className="text-gray-500 text-sm leading-relaxed">
+                Membangun solusi digital skalabel untuk Enterprise dan UMKM di seluruh Indonesia.
+              </p>
+            </div>
+            
+            <div>
+              <h4 className="font-bold mb-6">Services</h4>
+              <ul className="space-y-4 text-sm text-gray-500">
+                <li><a href="#" className="hover:text-teal-cyan transition-colors">Web Development</a></li>
+                <li><a href="#" className="hover:text-teal-cyan transition-colors">Mobile App</a></li>
+                <li><a href="#" className="hover:text-teal-cyan transition-colors">AI Solutions</a></li>
+                <li><a href="#" className="hover:text-teal-cyan transition-colors">Cloud Strategy</a></li>
+              </ul>
+            </div>
+
+            <div>
+              <h4 className="font-bold mb-6">Company</h4>
+              <ul className="space-y-4 text-sm text-gray-500">
+                <li><a href="#" className="hover:text-teal-cyan transition-colors">About Us</a></li>
+                <li><a href="#" className="hover:text-teal-cyan transition-colors">Portfolio</a></li>
+                <li><a href="#" className="hover:text-teal-cyan transition-colors">Career</a></li>
+                <li><a href="#" className="hover:text-teal-cyan transition-colors">Blog</a></li>
+              </ul>
+            </div>
+
+            <div>
+              <h4 className="font-bold mb-6">Contact</h4>
+              <ul className="space-y-4 text-sm text-gray-500">
+                <li>Email: hello@tubalabs.com</li>
+                <li>Phone: +62 812-3456-7890</li>
+                <li>Jakarta, Indonesia</li>
+              </ul>
+            </div>
+          </div>
+          
+          <div className="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6">
+            <div className="text-gray-500 text-xs font-mono">
+              &copy; {new Date().getFullYear()} Tuba Labs. All rights reserved.
+            </div>
+            <div className="flex gap-8 text-sm text-gray-400">
+              <a href="#" className="hover:text-teal-cyan transition-colors">Twitter</a>
+              <a href="#" className="hover:text-teal-cyan transition-colors">LinkedIn</a>
+              <a href="#" className="hover:text-teal-cyan transition-colors">Github</a>
+              <a href="#" className="hover:text-teal-cyan transition-colors">Instagram</a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </main>
+  );
+}

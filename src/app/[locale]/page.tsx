@@ -5,10 +5,12 @@ import Services from "@/components/sections/Services";
 import ValueProposition from "@/components/sections/ValueProposition";
 import MSMESection from "@/components/sections/MSMESection";
 import Testimonials from "@/components/sections/Testimonials";
-import {useTranslations} from 'next-intl';
+import {setRequestLocale, getTranslations} from 'next-intl/server';
 
-export default function Home() {
-  const t = useTranslations('Index');
+export default async function Home({params}: {params: Promise<{locale: string}>}) {
+  const {locale} = await params;
+  setRequestLocale(locale);
+  const t = await getTranslations('Index');
 
   return (
     <main className="relative min-h-screen">

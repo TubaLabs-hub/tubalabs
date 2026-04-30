@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Montserrat, Inter } from "next/font/google";
 import "../globals.css";
 import {NextIntlClientProvider} from 'next-intl';
-import {getMessages} from 'next-intl/server';
+import {getMessages, setRequestLocale} from 'next-intl/server';
 import {notFound} from 'next/navigation';
 
 const montserrat = Montserrat({
@@ -46,6 +46,11 @@ export const metadata: Metadata = {
 
 const locales = ['en', 'id'];
 
+export function generateStaticParams() {
+  return locales.map((locale) => ({locale}));
+}
+
+
 export default async function RootLayout({
   children,
   params
@@ -54,6 +59,7 @@ export default async function RootLayout({
   params: Promise<{locale: string}>;
 }) {
   const {locale} = await params;
+  setRequestLocale(locale);
 
   // Validate that the incoming `locale` parameter is valid
   if (!locales.includes(locale)) {

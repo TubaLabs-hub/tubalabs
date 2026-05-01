@@ -80,25 +80,25 @@ export default function MSMEGrid() {
 
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 md:gap-12 relative z-10">
         <TiltCard 
-          src="/logos/umayumcha.png" 
+          src="/tubalabs/logos/umayumcha.png" 
           alt="Dimsum Umayumcha" 
           delay={0.1}
           className="md:translate-y-4"
         />
         <TiltCard 
-          src="/logos/bolenmanita.png" 
+          src="/tubalabs/logos/bolenmanita.png" 
           alt="Bolen Manita" 
           delay={0.2}
           className="md:-translate-y-4"
         />
         <TiltCard 
-          src="/logos/ohdough.png" 
+          src="/tubalabs/logos/ohdough.png" 
           alt="Oh Dough" 
           delay={0.3}
           className="md:translate-y-4"
         />
         <TiltCard 
-          src="/logos/caesarprinting.png" 
+          src="/tubalabs/logos/caesarprinting.png" 
           alt="Caesar Printing" 
           delay={0.4}
           className="md:-translate-y-4"

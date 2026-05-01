@@ -31,12 +31,6 @@ jobs:
           cache: "pnpm"
       - name: Setup Pages
         uses: actions/configure-pages@v5
-        with:
-          # Automatically inject basePath in your Next.js config file, and a
-          # secondary optimization to set nextjs.config.js output to export
-          # static_site_generator: next
-          # We already did this manually, but it doesn't hurt.
-          static_site_generator: next
       - name: Install dependencies
         run: pnpm install
       - name: Build with Next.js

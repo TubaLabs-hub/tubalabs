@@ -12,6 +12,7 @@ const projects = [
     tags: ["Sales", "Accounting", "Enterprise"],
     image: "/tubalabs/logos/umayumcha.png", // Using existing logos as placeholders
     color: "from-teal-cyan/20 to-deep-purple/20",
+    noInitialInvert: true,
   },
   {
     id: "inventory",
@@ -21,6 +22,7 @@ const projects = [
     tags: ["Inventory", "Logistics", "Management"],
     image: "/tubalabs/logos/umayumcha.png",
     color: "from-deep-purple/20 to-blue-500/20",
+    noInitialInvert: true,
   },
   {
     id: "ohdough",
@@ -104,12 +106,14 @@ export default function Portfolio() {
               
               <div className="relative glass rounded-[2.5rem] overflow-hidden border-white/5 group-hover:border-white/20 transition-all duration-500 h-full flex flex-col">
                 {/* Image/Mockup area */}
-                <div className="h-64 relative overflow-hidden bg-white/5 flex items-center justify-center p-12">
-                  <div className="absolute inset-0 bg-gradient-to-b from-transparent to-primary-navy/50 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                <div className="h-64 relative overflow-hidden bg-white/[0.03] group-hover:bg-slate-200 transition-all duration-700 flex items-center justify-center p-12">
+                  <div className="absolute inset-0 bg-gradient-to-br from-white/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                   <img
                     src={project.image}
                     alt={t(project.titleKey)}
-                    className="max-h-full w-auto object-contain transition-transform duration-700 group-hover:scale-110 group-hover:rotate-2"
+                    className={`max-h-full w-auto object-contain transition-all duration-700 group-hover:scale-110 group-hover:rotate-2 group-hover:drop-shadow-2xl ${
+                      project.noInitialInvert ? "" : "brightness-0 invert"
+                    } group-hover:brightness-100 group-hover:invert-0 opacity-40 group-hover:opacity-100`}
                   />
                   
                   {/* Category Tag Overlay */}

@@ -5,6 +5,7 @@ import Services from "@/components/sections/Services";
 import ValueProposition from "@/components/sections/ValueProposition";
 import MSMESection from "@/components/sections/MSMESection";
 import Testimonials from "@/components/sections/Testimonials";
+import TrustSection from "@/components/sections/TrustSection";
 import {setRequestLocale, getTranslations} from 'next-intl/server';
 
 export default async function Home({params}: {params: Promise<{locale: string}>}) {
@@ -18,22 +19,7 @@ export default async function Home({params}: {params: Promise<{locale: string}>}
       <Navbar />
       <Hero />
       
-      {/* Trust Badge Section */}
-      <section className="py-20 container mx-auto px-6 relative z-10">
-        <div className="flex flex-col items-center justify-center space-y-8">
-          <p className="text-teal-cyan font-mono text-sm tracking-[0.3em] uppercase opacity-70">{t('trust')}</p>
-          <div className="w-full overflow-hidden relative">
-            <div className="flex flex-wrap gap-12 md:gap-24 items-center justify-center group transition-all duration-700">
-              <img src="/tubalabs/logos/medco.png" alt="Medco" className="h-8 md:h-12 w-auto object-contain opacity-70 grayscale brightness-0 invert group-hover:opacity-100 group-hover:grayscale-0 group-hover:brightness-100 group-hover:invert-0 transition-all duration-500" />
-              <img src="/tubalabs/logos/telkomsel.png" alt="Telkomsel" className="h-8 md:h-12 w-auto object-contain opacity-70 grayscale brightness-0 invert group-hover:opacity-100 group-hover:grayscale-0 group-hover:brightness-100 group-hover:invert-0 transition-all duration-500" />
-              <img src="/tubalabs/logos/pertamina.png" alt="Pertamina" className="h-8 md:h-12 w-auto object-contain opacity-70 grayscale brightness-0 invert group-hover:opacity-100 group-hover:grayscale-0 group-hover:brightness-100 group-hover:invert-0 transition-all duration-500" />
-              <img src="/tubalabs/logos/pelindo.png" alt="Pelindo" className="h-8 md:h-12 w-auto object-contain opacity-70 grayscale brightness-0 invert group-hover:opacity-100 group-hover:grayscale-0 group-hover:brightness-100 group-hover:invert-0 transition-all duration-500" />
-              <img src="/tubalabs/logos/garuda.png" alt="Garuda Indonesia" className="h-8 md:h-12 w-auto object-contain opacity-70 grayscale brightness-0 invert group-hover:opacity-100 group-hover:grayscale-0 group-hover:brightness-100 group-hover:invert-0 transition-all duration-500" />
-              <img src="/tubalabs/logos/mandiri.png" alt="Bank Mandiri" className="h-8 md:h-12 w-auto object-contain opacity-70 grayscale brightness-0 invert group-hover:opacity-100 group-hover:grayscale-0 group-hover:brightness-100 group-hover:invert-0 transition-all duration-500" />
-            </div>
-          </div>
-        </div>
-      </section>
+      <TrustSection />
 
       <ValueProposition />
       

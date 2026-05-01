@@ -6,6 +6,7 @@ import ValueProposition from "@/components/sections/ValueProposition";
 import MSMESection from "@/components/sections/MSMESection";
 import Testimonials from "@/components/sections/Testimonials";
 import TrustSection from "@/components/sections/TrustSection";
+import Portfolio from "@/components/sections/Portfolio";
 import {setRequestLocale, getTranslations} from 'next-intl/server';
 
 export default async function Home({params}: {params: Promise<{locale: string}>}) {
@@ -26,6 +27,8 @@ export default async function Home({params}: {params: Promise<{locale: string}>}
       <Services />
 
       <MSMESection />
+
+      <Portfolio />
 
       <Testimonials />
 

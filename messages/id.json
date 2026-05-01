@@ -6,7 +6,19 @@
     "cta_portfolio": "Lihat Portofolio",
     "trust": "Dipercaya oleh pemimpin industri",
     "msme_title": "Memberdayakan UMKM untuk Skala Lebih Besar.",
-    "msme_desc": "Kami percaya inovasi bukan hanya milik korporasi besar. Dari Dimsum Umayumcha dengan 60+ cabang hingga UMKM lokal di Bontang, kami menghadirkan solusi teknologi yang nyata dan berdampak."
+    "msme_desc": "Kami percaya inovasi bukan hanya milik korporasi besar. Dari Dimsum Umayumcha dengan 60+ cabang hingga UMKM lokal di Bontang, kami menghadirkan solusi teknologi yang nyata dan berdampak.",
+    "portfolio_title": "Karya Kami.",
+    "portfolio_subtitle": "Memberikan solusi digital berdampak tinggi di berbagai industri.",
+    "portfolio_ohdough": "Oh Dough Bakery",
+    "portfolio_ohdough_desc": "Landing page toko roti premium dengan pengalaman pemesanan terintegrasi di Jombang.",
+    "portfolio_bolen": "Bolen Manita",
+    "portfolio_bolen_desc": "Kehadiran digital untuk toko Bolen paling terkenal di Surabaya Utara.",
+    "portfolio_caesar": "Caesar Printing",
+    "portfolio_caesar_desc": "Solusi digital ujung-ke-ujung untuk bisnis percetakan ternama di Bontang.",
+    "portfolio_inventory": "IMS Umayumcha",
+    "portfolio_inventory_desc": "Sistem manajemen inventaris yang kokoh untuk 60+ cabang Dimsum Umayumcha.",
+    "portfolio_rasasayang": "Sistem Rasa Sayang",
+    "portfolio_rasasayang_desc": "Rekap Administrasi Sales & Akuntansi Sistem untuk pelaporan bisnis yang komprehensif."
   },
   "Navbar": {
     "services": "Layanan",

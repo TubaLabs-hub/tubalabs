@@ -6,7 +6,19 @@
     "cta_portfolio": "View Portfolio",
     "trust": "Trusted by industry leaders",
     "msme_title": "Empowering MSMEs to Scale Further.",
-    "msme_desc": "We believe innovation isn't just for large corporations. From Dimsum Umayumcha with 60+ branches to local MSMEs in Bontang, we deliver real and impactful technology solutions."
+    "msme_desc": "We believe innovation isn't just for large corporations. From Dimsum Umayumcha with 60+ branches to local MSMEs in Bontang, we deliver real and impactful technology solutions.",
+    "portfolio_title": "Our Recent Work.",
+    "portfolio_subtitle": "Delivering high-impact digital solutions across various industries.",
+    "portfolio_ohdough": "Oh Dough Bakery",
+    "portfolio_ohdough_desc": "Premium bakery store landing page with integrated ordering experience in Jombang.",
+    "portfolio_bolen": "Bolen Manita",
+    "portfolio_bolen_desc": "Digital presence for North Surabaya's most famous Bolen shop, focusing on brand identity.",
+    "portfolio_caesar": "Caesar Printing",
+    "portfolio_caesar_desc": "End-to-end digital solution for a established printing business in Bontang.",
+    "portfolio_inventory": "IMS Umayumcha",
+    "portfolio_inventory_desc": "Robust inventory management system for Dimsum Umayumcha's 60+ branches.",
+    "portfolio_rasasayang": "Rasa Sayang System",
+    "portfolio_rasasayang_desc": "Sales and Accounting Administration System for comprehensive business reporting."
   },
   "Navbar": {
     "services": "Services",
